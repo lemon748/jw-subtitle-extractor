@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 RUN playwright install chromium
 
 # 6. 서버 실행 명령어 (Render가 포트를 알아서 연결해줍니다)
-CMD gunicorn app:app -b 0.0.0.0:10000
+CMD gunicorn app:app -b 0.0.0.0:10000 --timeout 120
