@@ -3,10 +3,7 @@ from flask_cors import CORS
 from playwright.sync_api import sync_playwright
 import time
 import logging
-import os  # 이 줄 추가!
-
-app = Flask(__name__)
-CORS(app)
+import os
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
