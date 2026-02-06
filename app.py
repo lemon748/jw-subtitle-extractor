@@ -95,15 +95,3 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 ```
-
-4. 아래로 스크롤해서 **"Commit new file"** 클릭
-
-### 2-2. requirements.txt 파일 만들기
-1. 다시 **"Add file"** → **"Create new file"** 클릭
-2. 파일 이름에 `requirements.txt` 입력
-3. 아래 내용 붙여넣기:
-```
-flask==3.0.0
-flask-cors==4.0.0
-playwright==1.40.0
-gunicorn==21.2.0
